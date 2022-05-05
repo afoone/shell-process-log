@@ -1,5 +1,5 @@
 #!/bin/bash 
-MaxFileSize=2048
+MaxFileSize=204800
 DaysToKeep=7
 echo -e "\n Fecha:"`date` >> /var/log/ps.log
 echo -e "\n Uptime: "`uptime` >> /var/log/ps.log
