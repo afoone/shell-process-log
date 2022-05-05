@@ -2,6 +2,7 @@
 MaxFileSize=2048
 DaysToKeep=7
 echo -e "\n Fecha:"`date` >> /var/log/ps.log
+echo -e "\n Uptime: "`uptime` >> /var/log/ps.log
 ps -e -o pcpu,pmem,args --sort=pcpu | tail >> /var/log/ps.log
 #Get size in bytes** 
 file_size=`du -b /var/log/ps.log | tr -s '\t' ' ' | cut -d' ' -f1`
